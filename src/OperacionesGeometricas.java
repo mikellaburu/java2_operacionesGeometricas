@@ -19,10 +19,11 @@ public class OperacionesGeometricas {
 		opcion=tecla1.next();
 		
 		
-		double radio=0; double base=0; double altura=0;
+
 		
 		if ((opcion.equalsIgnoreCase("a"))||(opcion.equalsIgnoreCase("b"))){
 			if (opcion.equalsIgnoreCase("a")){
+				double radio=0;
 				Circulo c1=new Circulo();
 				System.out.println("Circulo");
 				System.out.println("Introduce el radio:");
@@ -32,6 +33,7 @@ public class OperacionesGeometricas {
 				System.out.println("Perimetro: "+c1.calculaPerimetro());
 			}
 			if (opcion.equalsIgnoreCase("b")){
+				double base=0; double altura=0;
 				Rectangulo r1=new Rectangulo();
 				System.out.println("Rectangulo");
 				System.out.println("Introduce la base:");
