@@ -18,7 +18,7 @@ public class OperacionesGeometricas {
 		
 		opcion=tecla1.next();
 		
-		Scanner tecla2=new Scanner(System.in);
+		
 		double radio=0; double base=0; double altura=0;
 		
 		if ((opcion.equalsIgnoreCase("a"))||(opcion.equalsIgnoreCase("b"))){
@@ -26,7 +26,7 @@ public class OperacionesGeometricas {
 				Circulo c1=new Circulo();
 				System.out.println("Circulo");
 				System.out.println("Introduce el radio:");
-				radio=tecla2.nextDouble();
+				radio=tecla1.nextDouble();
 				c1.setRadio(radio);
 				System.out.println("Area: "+c1.calculaArea());
 				System.out.println("Perimetro: "+c1.calculaPerimetro());
@@ -35,10 +35,10 @@ public class OperacionesGeometricas {
 				Rectangulo r1=new Rectangulo();
 				System.out.println("Rectangulo");
 				System.out.println("Introduce la base:");
-				base=tecla2.nextDouble();
+				base=tecla1.nextDouble();
 				r1.setBase(base);
 				System.out.println("Introduce la altura:");
-				altura=tecla2.nextDouble();
+				altura=tecla1.nextDouble();
 				r1.setAltura(altura);
 				System.out.println("Area: "+r1.calculaArea());
 				System.out.println("Perimetro: "+r1.calculaPerimetro());
