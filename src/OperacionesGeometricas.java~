@@ -19,7 +19,7 @@ public class OperacionesGeometricas {
 		opcion=tecla1.next();
 		
 		
-		double base=0; double altura=0;
+
 		
 		if ((opcion.equalsIgnoreCase("a"))||(opcion.equalsIgnoreCase("b"))){
 			if (opcion.equalsIgnoreCase("a")){
