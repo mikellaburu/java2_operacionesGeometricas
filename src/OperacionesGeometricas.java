@@ -15,13 +15,14 @@ public class OperacionesGeometricas {
 		System.out.println("Elige una figura geometrica:");
 		System.out.println("a) Circulo");
 		System.out.println("b) Rectangulo");
+		System.out.println("x) Salir");
 		
 		opcion=tecla1.next();
-		
-		
 
-		
-		if ((opcion.equalsIgnoreCase("a"))||(opcion.equalsIgnoreCase("b"))){
+
+		while (!opcion.equalsIgnoreCase("x")){
+
+		  if ((opcion.equalsIgnoreCase("a"))||(opcion.equalsIgnoreCase("b"))||(opcion.equalsIgnoreCase("x"))){
 			if (opcion.equalsIgnoreCase("a")){
 				double radio=0;
 				//Circulo c1=new Circulo();
@@ -52,9 +53,27 @@ public class OperacionesGeometricas {
 				System.out.println("Perimetro: "+r1.calculaPerimetro());
 			}
 
-		}else{
+
+		  }else{
 			System.out.println("Opcion no valida");
+		  }
+
+		  System.out.println("Quieres hacer otra operacion?");
+  		  System.out.println("a) Circulo");
+		  System.out.println("b) Rectangulo");
+		  System.out.println("x) Salir");
+		  
+		  opcion=tecla1.next();
+		  
 		}
+		
+		if (opcion.equalsIgnoreCase("x")){
+			System.out.println("Salir, programa terminado");
+			System.exit(0);
+		}
+
+		
+		
 		
 		
 
