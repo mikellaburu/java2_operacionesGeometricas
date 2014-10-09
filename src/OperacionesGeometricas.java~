@@ -52,10 +52,7 @@ public class OperacionesGeometricas {
 				System.out.println("Area: "+r1.calculaArea());
 				System.out.println("Perimetro: "+r1.calculaPerimetro());
 			}
-			/*if (opcion.equalsIgnoreCase("x")){
-				System.out.println("Salir, programa terminado");
-				System.exit(0);
-			}*/
+
 
 		  }else{
 			System.out.println("Opcion no valida");
